@@ -9,6 +9,45 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <%= yield %>
+    <header>
+      <nav class="navbar">
+      <%# <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav"> %>
+
+
+        <a class="navbar-brand">アフターコロナでやりたいこと</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="テキスト" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">検索</button>
+        </form>
+      </nav>
+      <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">アフターコロナでやりたいことをアップしてね</h1>
+        <h2 class="text-white-80 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+        <a href="#about" class="btn btn-secondary w-50 h-100">Get Started</a>
+      </div>
+    </div>
+  </header>
+    </header>
+
+
+
+    <main>
+      <div id="about" class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+      Copyright © Yaritaikoto 2020
+    </div>
+    </footer>
+
   </body>
 </html>
