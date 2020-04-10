@@ -1,2 +1,35 @@
-<h1 class="mx-auto text-center my-0">アフターコロナでやりたいことPages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+   <main>
+      <header class="masthead">
+        <div class="container d-flex align-items-center">
+          <div class="masthead__content mx-auto text-center">
+            <h1 class="mx-auto my-0 nav-title">アフターコロナでやりたいことをポストしてね</h1>
+            <h2 class="text-white-80 mx-auto mt-2">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+            <div class="start-btn">
+              <%= link_to 'みる', root_path(anchor: "about"), class:"btn btn-secondary mcb" %>
+              <%= link_to 'やりたいこと', new_page_path, class:"btn btn-secondary mcb mt-5" %>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div id="about" class="container-fluid view">
+        <% @pages.each do |page| %>
+          <div class="row view__box">
+              <div class="view__box__content" >
+              <%= simple_format(page.content) %>
+              </div>
+              <div class="view__box__btn">
+                <div class="admbtn" >
+                  <%= link_to '編集', "/pages/#{page.id}/edit", method: :get, class: "adm" %>
+                </div>
+                <div class="admbtn" >
+                  <%= link_to '削除', "/pages/#{page.id}", method: :delete, class: "adm" %>
+                </div>
+              </div>
+          </div>
+        <% end %>
+        <%= paginate @pages, :params => { :anchor => 'about' } %>
+      </div>
+
+    </main>
+
