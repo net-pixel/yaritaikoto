@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   root 'pages#index'
-  resources :pages, except: :show do
-    collection do
-      get 'search'
-    end
+
+  namespace :pages do
+    resources :searches, only: :index
   end
+  
+  resources :pages, except: :show
 end

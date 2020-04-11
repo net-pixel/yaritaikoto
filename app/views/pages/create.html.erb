@@ -1,10 +1,11 @@
 <div class="container successbox align-items-center">
   <div class="row successbox__msg">
     <div class="text-center">
-      <h3 class="successbox__msg__text">
+      <p class="successbox__msg__text">
         Posted
-      </h3>
-      <a class="btn btn-secondary sb-btn" href="/">戻る</a>
+      </p>
+      <%= link_to '戻る', root_path, class:"btn btn-secondary sb-btn" %>
+      <%= link_to 'やりたいこと', new_page_path, class:"btn btn-secondary sb-btn mt-5" %>
     </div>
   </div>
 </div>
