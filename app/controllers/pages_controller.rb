@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @pages = Page.all.order("created_at DESC").page(params[:page]).per(10)
+    @pages = Page.all.order("created_at DESC").page(params[:page]).per(24)
   end
 
   def new
@@ -24,10 +24,6 @@ class PagesController < ApplicationController
     page = Page.find(params[:id])
     page.update(page_params)
   end
-  
-  # def search
-  #   @pages = Page.search(params[:keyword])
-  # end
   
   private
   def page_params

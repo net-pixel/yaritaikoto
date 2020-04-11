@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   namespace :pages do
     resources :searches, only: :index
   end
-  
+
   resources :pages, except: :show
 end
