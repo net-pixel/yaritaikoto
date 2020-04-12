@@ -7,6 +7,7 @@
         <div class="view__box__content" >
         <%= simple_format(page.content) %>
         </div>
+        <% if user_signed_in? %>
         <div class="view__box__btn">
           <div class="admbtn" >
             <%= link_to '編集', "/pages/#{page.id}/edit", method: :get, class: "adm" %>
@@ -15,6 +16,7 @@
             <%= link_to '削除', "/pages/#{page.id}", method: :delete, class: "adm" %>
           </div>
         </div>
+        <% end %>
     </div>
   <% end %>
 </div>

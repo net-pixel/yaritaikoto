@@ -1,4 +1,20 @@
-.notice {
+.session {
   padding-top: 80px;
   height: 100vh;
+}
+
+.notification {
+  .notice {
+    background-color: black;
+    color: $white;
+    text-align: center;
+    height: 20px;
+  }
+
+  .alert {
+    background-color: lightsalmon;
+    color: $white;
+    text-align: center;
+    margin: 0;
+  }
 }
