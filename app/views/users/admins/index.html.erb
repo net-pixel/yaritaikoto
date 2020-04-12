@@ -1,0 +1,18 @@
+      <div id="about" class="container-fluid view">
+        <% @pages.each do |page| %>
+          <div class="row view__box">
+              <div class="view__box__content" >
+              <%= simple_format(page.content) %>
+              </div>
+              <div class="view__box__btn">
+                <div class="admbtn" >
+                  <%= link_to '編集', "/pages/#{page.id}/edit", method: :get, class: "adm" %>
+                </div>
+                <div class="admbtn" >
+                  <%= link_to '削除', "/pages/#{page.id}", method: :delete, class: "adm" %>
+                </div>
+              </div>
+          </div>
+        <% end %>
+        <%= paginate @pages, :params => { :anchor => 'about' } %>
+      </div>

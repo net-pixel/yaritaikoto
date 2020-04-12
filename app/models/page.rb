@@ -6,12 +6,5 @@ class Page < ApplicationRecord
     return Page.all unless search
     Page.where('content LIKE(?)', "%#{search}%")
   end
-  # def self.search(search)
-  #   if search
-  #     Page.where('content LIKE(?)', "%#{search}%")
-  #   else
-  #     Page.all
-  #   end
-  # end
 
 end
