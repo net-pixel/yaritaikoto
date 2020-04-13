@@ -86,28 +86,38 @@ html {
 }
 
 @media screen and (max-width:320px){
-    a.top {
-      font-size: 20px;
-    }
-    h2.title {
-      font-size: 22px;
-    }
-    i.fas.fa-search {
-      font-size: 20px;
-    }
-    div.row.view__box {
-      margin: 60px 8px 5px 8px;
-      width: 120px;
-      padding: 0.6em;
-      &__content {
-        font-size: 15px;
-      }
+  a.top {
+    font-size: 20px;
+  }
+  h2.title {
+    font-size: 22px;
+  }
+  i.fas.fa-search {
+    font-size: 20px;
+  }
+  div.view__box {
+    margin: 60px 8px 5px 8px;
+    width: 120px;
+    padding: 0.6em;
+    &__content p {
+      font-size: 15px;
     }
   }
+}
 
 @media screen and (min-width:370px) and (max-width:420px){
   h2.title {
     font-size: 22px;
+  }
+
+  div.view__box {
+    margin: 50px 8px 5px 8px;
+    width: 130px;
+    padding: 0.4em;
+    &__content p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -142,16 +152,16 @@ html {
   div.post-box__title {
     font-size: 40px;
   }
-  div.row.view__box {
-    margin: 80px 20px 10px 20px;
-    width: 210px;
+  div.view__box {
+    margin: 100px 20px 10px 20px;
+    width: 250px;
     padding: 0.6em;
-    &__content {
-      font-size: 40px;
+    &__content p {
+      font-size: 30px;
     }
+  }
   div.error {
     font-size: 50px;
-  }
   }
   textarea#page_content {
     font-size: 40px;
