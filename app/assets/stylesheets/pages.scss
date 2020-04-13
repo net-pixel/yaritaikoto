@@ -131,12 +131,12 @@ a.adm {
   align-items: center;
   &__title {
     margin: 30px 50px 5px 50px;
-    font-size: 30px;
+    font-size: 25px;
     color: black;
     text-align: center;
   }
   &__text {
-    margin-top: 30px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,23 +145,23 @@ a.adm {
 }
 
 .sb-btn {
-  height: 100px;
-  width: 300px;
-  line-height: 90px;
+  height: 80px;
+  width: 70%;
+  line-height: 70px;
   border-radius: 30px;
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
 
 textarea {
   width: 70vw;
-  height: 50vh;
-  font-size: 30px;
+  height: 30vh;
+  font-size: 25px;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.5);
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .successbox {
