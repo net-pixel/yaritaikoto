@@ -14,6 +14,8 @@ $(function(){
   }
 
   $(".search-input").on("keyup", function(){
+    var p = $("#about").offset().top;
+    $('html,body').animate({ scrollTop: p }, 10, 'swing');
     var input = $(".search-input").val()
     $.ajax({
       type: "GET",
@@ -23,7 +25,6 @@ $(function(){
     })
     .done(function(pages){
       $(".container-fluid.view").empty();
-      
       if (pages.length !== 0) {
         pages.forEach(function(page){
           appendPage(page);
