@@ -15,7 +15,7 @@ html {
   display: flex;
   text-align: center;
   .form-inline {
-    width: 40%;
+    width: 35%;
     display: flex;
     text-align: center;
     // justify-content: space-between;
@@ -27,7 +27,7 @@ html {
     i.fa-search {
       text-decoration: none;
       color: white;
-      font-size: 30px;
+      font-size: 25px;
       margin-left: 10px;
       &:hover{
         color: gray;
@@ -51,7 +51,7 @@ html {
   height: 100vh;
   background-size:cover;
   color: white;
-  padding-top: 100px;
+  padding-top: 90px;
   overflow: scroll;
   &__content {
     height: auto;
@@ -59,7 +59,7 @@ html {
       height: 100px;
       width: 70%;
       line-height: 90px;
-      font-size: 30px;
+      font-size: 25px;
       border-radius: 30px;
     }
   }
