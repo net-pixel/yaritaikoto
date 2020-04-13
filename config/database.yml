@@ -52,3 +52,6 @@ production:
   database: yaritaikoto_production
   username: yaritaikoto
   password: <%= ENV['YARITAIKOTO_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
