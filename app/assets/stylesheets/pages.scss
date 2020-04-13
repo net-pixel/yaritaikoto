@@ -153,6 +153,9 @@ html {
     font-size: 50px;
   }
   }
+  textarea#page_content {
+    font-size: 40px;
+  }
   }
 
 .search-hd {
@@ -243,7 +246,7 @@ a.adm {
 textarea {
   width: 70vw;
   height: 30vh;
-  font-size: 15px;
+  font-size: 25px;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.5);
   color: white;
