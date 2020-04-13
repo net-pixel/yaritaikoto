@@ -23,6 +23,7 @@ $(function(){
     })
     .done(function(pages){
       $(".container-fluid.view").empty();
+      
       if (pages.length !== 0) {
         pages.forEach(function(page){
           appendPage(page);
