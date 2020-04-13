@@ -101,6 +101,9 @@ p{
   div.container {
     font-size: 12px;
   }
+  div.view__box {
+    width: 120px;
+  }
 }
 
 @media screen and (min-width:321px) and (max-width:420px){
@@ -118,6 +121,15 @@ p{
   }
   div.post-box__title {
     font-size: 32px;
+  }
+  div.view__box {
+    margin: 10px 10px 10px 10px;
+    width: 200px;
+    padding: 0.6em;
+    border-radius: 20px;
+    &__content {
+      font-size: 25px;
+    }
   }
 }
 
@@ -171,7 +183,7 @@ p{
 
 .view {
   height: 100vh;
-  padding-top: 90px;
+  padding-top: 100px;
   text-align: center;
   overflow: auto;
   background: image-url('sky');
