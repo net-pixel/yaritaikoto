@@ -258,8 +258,8 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
   &__msg {
-    margin: 40%;
     &__text{
       margin: 30px;
       font-size: 70px;
