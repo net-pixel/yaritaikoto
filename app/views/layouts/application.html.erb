@@ -4,7 +4,7 @@
     <title>Yaritaikoto</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -13,16 +13,19 @@
   <body>
     <%= render 'layouts/notifications' %>
     <header>
-      <nav class="navbar">
-        <a href="/pages" class="navbar-brand top">#PostYourWishes</a>
-        <%= form_with(url: pages_searches_path, local: true, method: :get, class: "form-inline") do |form| %>
-          <%= form.text_field :keyword, placeholder: "やりたいことを検索", class: "form-control mr-sm-2 search-input" %>
-          <%# <%= form.submit "検索", class: "btn btn-outline-light my-2 my-sm-0" %>
-        <%= link_to pages_searches_path, class: "navbar__sh" do %>
-          <i class="fas fa-search"></i>
-        <% end %>
-        <% end %>
-      </nav>
+          <nav class="navbar">
+            <%# <div class="container-fluid">
+              <div class="row"> %>
+                <a href="/pages" class="top">#PostYourWishes</a>
+                <%= form_with(url: pages_searches_path, local: true, method: :get, class: "form-inline") do |form| %>
+                  <%= form.text_field :keyword, placeholder: "検索", class: "form-control mr-sm-2 search-input" %>
+                  <%= link_to pages_searches_path, class: "navbar__sh" do %>
+                    <i class="fas fa-search"></i>
+                  <% end %>
+                <% end %>
+              <%# </div>
+            </div> %>
+          </nav>
 
     </header>
 
