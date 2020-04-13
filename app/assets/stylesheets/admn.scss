@@ -1,6 +1,7 @@
 .session {
   padding-top: 80px;
   height: 100vh;
+  font-family: var(--M-PLUS-1-p);
 }
 
 .notification {
@@ -29,3 +30,8 @@
 
 }
 
+@media screen and (min-width:800px){
+div.container.session {
+  padding-top: 100px;
+}
+  }
