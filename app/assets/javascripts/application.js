@@ -19,7 +19,7 @@
 //= require_tree .
 
 // $(function() {
-//   var topBtn = $('#page-top');    
+//   var topBtn = $('#page-top');
 //   topBtn.hide();
 //   //スクロールが100に達したらボタン表示
 //   $(window).scroll(function () {
