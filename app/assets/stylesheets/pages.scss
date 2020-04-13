@@ -6,8 +6,9 @@ html {
 }
 
 .navbar {
+  margin-top: 0;
   margin-bottom: 30px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
   color: white;
@@ -205,6 +206,29 @@ a.page-link {
   color: white;
 }
 //paginate end
+
+// //top btn
+// #page-top {
+//   position: fixed;
+//   top: 50%;
+//   right: 20px;
+//   font-size: 77%;
+// }
+// #page-top a {
+//   background-color: rgba(0,0,0,0.5);
+//   text-decoration: none;
+//   color: #fff;
+//   width: 60px;
+//   padding: 20px 0;
+//   text-align: center;
+//   display: block;
+//   border-radius: 50px;
+// }
+// #page-top a:hover {
+//   text-decoration: none;
+//   background-color: rgba(0, 0, 0, 0.185);
+// }
+// //top btnend
 
 .footer {
   background-color: gray;

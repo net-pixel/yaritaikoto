@@ -30,7 +30,7 @@ $(function(){
       } else if (input.length == 0) {
         return false;
       } else {
-        appendNoPage("一致するポストがありません。");
+        appendNoPage("一致するポストがありません");
       }
     })
     .fail(function(){

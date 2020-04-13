@@ -11,11 +11,10 @@
     
   </head>
   <body>
-<%= render 'layouts/notifications' %>
-
+    <%= render 'layouts/notifications' %>
     <header>
       <nav class="navbar">
-        <a href="/pages" class="navbar-brand top">アフターコロナでやりたいこと</a>
+        <a href="/pages" class="navbar-brand top">#PostYourWishes</a>
         <%= form_with(url: pages_searches_path, local: true, method: :get, class: "form-inline") do |form| %>
           <%= form.text_field :keyword, placeholder: "やりたいことを検索", class: "form-control mr-sm-2 search-input" %>
           <%# <%= form.submit "検索", class: "btn btn-outline-light my-2 my-sm-0" %>
@@ -24,10 +23,12 @@
         <% end %>
         <% end %>
       </nav>
+
     </header>
 
     <main>
      <%= yield %>
+     <%# <p id="page-top"><a href="#wrap">TOP</a></p> %>
     </main>
 
 
