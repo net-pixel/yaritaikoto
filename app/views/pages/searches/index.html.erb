@@ -3,7 +3,7 @@
     <%= link_to '戻る', root_path, class:"btn btn-outline-light my-2 my-sm-0" %>
   </div>
   <% @pages.each do |page| %>
-    <div class="row view__box">
+    <div class="row view__box" id="sh" >
         <div class="view__box__content" >
         <%= simple_format(page.content) %>
         </div>

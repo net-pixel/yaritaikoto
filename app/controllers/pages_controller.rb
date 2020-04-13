@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @pages = Page.all.order("created_at DESC").page(params[:page]).per(20)
+    @pages = Page.all.order("created_at DESC").page(params[:page]).per(30)
   end
 
   def new

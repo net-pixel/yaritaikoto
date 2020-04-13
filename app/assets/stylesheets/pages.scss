@@ -15,9 +15,11 @@
 html {
   scroll-behavior: smooth;
 }
+p{
+  margin: 0;
+}
 
 .navbar {
-  margin-top: 0;
   position: fixed;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
@@ -59,7 +61,7 @@ html {
  .masthead {
   background: image-url('main_img');
   background-position: center;
-  height: 100vh;
+  height: 100%;
   background-size:cover;
   color: white;
   padding-top: 90px;
@@ -68,8 +70,9 @@ html {
   &__content {
     height: auto;
     .title{
-      margin-top: 15%;
       font-family: var(--M-PLUS-1-p);
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
     .mcb {
       height: 100px;
@@ -80,8 +83,8 @@ html {
     }
   }
   .start-btn {
-    margin-top: 15%;
-    margin-bottom: 7%;
+    margin-top: 25%;
+    margin-bottom: 25%;
   }
 }
 
@@ -95,29 +98,17 @@ html {
   i.fas.fa-search {
     font-size: 20px;
   }
-  div.view__box {
-    margin: 60px 8px 5px 8px;
-    width: 120px;
-    padding: 0.6em;
-    &__content p {
-      font-size: 15px;
-    }
+  div.container {
+    font-size: 12px;
   }
 }
 
-@media screen and (min-width:370px) and (max-width:420px){
+@media screen and (min-width:321px) and (max-width:420px){
   h2.title {
     font-size: 22px;
   }
-
-  div.view__box {
-    margin: 50px 8px 5px 8px;
-    width: 130px;
-    padding: 0.4em;
-    &__content p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+  div.container#text {
+    font-size: 15px;
   }
 }
 
@@ -133,7 +124,6 @@ html {
 @media screen and (min-width:800px){
   h2.title {
     font-size: 50px;
-    margin-top: 100px;
   }
   .masthead {
     padding-top: 150px;
@@ -161,19 +151,27 @@ html {
     }
   }
   div.error {
-    font-size: 50px;
+    font-size: 40px;
   }
   textarea#page_content {
     font-size: 40px;
   }
+
+  div.view__box {
+    margin: 10px 10px 10px 10px;
+    width: 200px;
+    padding: 0.6em;
+    border-radius: 20px;
+    &__content {
+      font-size: 40px;
+    }
+  }
   }
 
-.search-hd {
-  margin-top: 100px;
-}
 
 .view {
   height: 100vh;
+  padding-top: 90px;
   text-align: center;
   overflow: auto;
   background: image-url('sky');
@@ -182,15 +180,14 @@ html {
   color: rgb(57, 57, 75);
   &__box {
     display: inline-flex;
-    margin: 80px 8px 5px 8px;
+    margin: 4px 4px 4px 4px;
     width: 140px;
     position: relative;
-    padding: 0.6em;
-    border-radius: 30px;
+    padding: 0.2em;
+    border-radius: 5px;
     background-color: rgba(231, 236, 240, 0.568);
     &__content {
-      margin-top: 20px;
-      font-size: 20px;
+      font-size: 13px;
     }
     &__btn {
       width: 100%;
@@ -199,6 +196,7 @@ html {
     }
   }
 }
+
 
 .admbtn {
   background-color: gray;
@@ -235,7 +233,6 @@ a.adm {
     text-align: center;
   }
   &__text {
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,7 +282,6 @@ textarea {
 }
 
 .error {
-  margin-top: 30%;
   font-size: 20px;
 }
 
