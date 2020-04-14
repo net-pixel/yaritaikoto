@@ -1,5 +1,6 @@
 # README
 ## What is Yaritaikoto(#PostYourWishes) app
+<img width="1164" alt="1_mainview" src="https://user-images.githubusercontent.com/62044473/79243966-475fe700-7eb1-11ea-8dc2-261f8cf9a704.png">
 このアプリはコロナウイルスで自粛が続く中、コロナウイルスがある程度治り自粛要請が解除された際に、自粛中にはなかなかできなかったやりたい事をポストするアプリです。
 This app is simply post and store data of the things you want to do after recovering from covid-19 so called coronavirus which happened in 2019 to 4/14/2020 as of today.
 
@@ -44,7 +45,7 @@ If developper have time and posts are nicely categolised, category search functi
 ここからは機能の詳細について説明
 
 ### MainMenu
-![Uploading 1_mainview.png…]()
+<img width="1164" alt="1_mainview" src="https://user-images.githubusercontent.com/62044473/79243966-475fe700-7eb1-11ea-8dc2-261f8cf9a704.png">
 メインメニューでは検索機能のついたヘッダーと共に下記の2つのボタンが押せる様になっています。
 * 投稿をみる
 * やりたい事をポストする
@@ -59,24 +60,24 @@ Main menu has basically two following button as well as search function in heade
 Header is fixed at the top so searchable even scroll down or go to any screen. Also title is available to press to go to home page.
 
 ### Search Function
-![Uploading 2_search.png…]()
+<img width="1058" alt="2_search" src="https://user-images.githubusercontent.com/62044473/79244051-63638880-7eb1-11ea-839b-2f1b0727f3af.png">
 検索機能は検索フォームに文字を入力すると候補を自動で出してくれる様にインクリメンタルサーチを実装しています。
 In terms of search function, incremental search function is applied which words are input to show the matched posts.
 
 ### PostView
-![Uploading 3_postview.png…]()
+<img width="1164" alt="3_postview" src="https://user-images.githubusercontent.com/62044473/79244171-8726ce80-7eb1-11ea-8b75-033d36d25107.png">
 みるボタンの押下もしくはスクロールで投稿をみる画面に行くことができます。
 ビュー画面ではpaginate似て一定のポスト以上は次のページを作成する様になっています。
 Pressing the Miru button or scroll down the page, post-view page is accessed. Post-view page automatically create the next page with sertain amount of posts.
 
 ### Post
-![Uploading 4_post.png…]()
+<img width="1164" alt="4_post" src="https://user-images.githubusercontent.com/62044473/79244235-9dcd2580-7eb1-11ea-89da-b6be9c3a1c55.png">
 やりたいことボタンの押下でやりたい事を投稿するフォーム画面に行くことができます。
 フォーム画面にやりたい事を入力し、ポストボタンを押下する事で投稿がデータベースに送信されます。
 Pressing the Yaritaikoto button, post page is accessed. Input the things you want to do and pressing post button will send information to database.
 
 ### AdminLogIn-Out
-![Uploading 5_admin.jpg…]()
+![5_admin](https://user-images.githubusercontent.com/62044473/79244293-b3dae600-7eb1-11ea-98dd-cb18ac43077d.jpg)
 フッターには管理画面へのログイン・ログアウトボタンを実装しています。
 
 * Login
@@ -85,18 +86,18 @@ Loginボタンを押下する事で管理者ログイン画面を表示するこ
 Logoutボタンを押下する事で管理者権限からログアウトすることができます。
 
 ### LoginForm
-![Uploading 6_login.png…]()
+<img width="1058" alt="6_login" src="https://user-images.githubusercontent.com/62044473/79244338-c35a2f00-7eb1-11ea-9020-552786256f64.png">
 Loginボタンを押下するとログイン情報入力画面へ行くことができます。
 ここでは指定された管理者のみアクセスすることができます。
 Pressing the login button anables cliant to access the admin function. Only adoministrator is accessible to this admin view.
 
 ### AdminView
-![Uploading 7_adminview.png…]()
+<img width="1058" alt="7_adminview" src="https://user-images.githubusercontent.com/62044473/79244526-f69cbe00-7eb1-11ea-8204-22f920e594b7.png">
 管理者画面では一つ一つのポストの編集及び削除を行うことができます。
 In the admin view, each post could be editted and deleted.
 
 ### Edit
-![Uploading 8_adminedit.png…]()
+<img width="1164" alt="8_adminedit" src="https://user-images.githubusercontent.com/62044473/79244635-17651380-7eb2-11ea-9199-7c81ab3bf0e2.png">
 編集ボタンを押下すると編集画面へ行くことができ、管理者権限にて編集画面からポストを編集することができます。
 Pressing the edit button, edit view is accessed and post is editted.
 
