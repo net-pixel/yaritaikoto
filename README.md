@@ -1,7 +1,7 @@
 # README
 ## What is Yaritaikoto(#PostYourWishes) app
 <img width="1164" alt="1_mainview" src="https://user-images.githubusercontent.com/62044473/79243966-475fe700-7eb1-11ea-8dc2-261f8cf9a704.png">
-このアプリはコロナウイルスで自粛が続く中、コロナウイルスがある程度治り自粛要請が解除された際に、自粛中にはなかなかできなかったやりたい事をポストするアプリです。
+このアプリはコロナウイルスで自粛が続く2020年4月、自粛によるストレスの軽減や、目標維持など目的として、コロナウイルスがある程度治り自粛要請が解除された際に、自粛中にはなかなかできない事や自粛が解除された際にご自身が目標とするものを投稿する為に作成したものです。
 
 This app is simply post and store data of the things you want to do after recovering from covid-19 so called coronavirus which happened in 2019 to 4/14/2020 as of today.
 
